@@ -1,0 +1,855 @@
+{
+ "updated": "2026-11-17",
+ "note": "单一真源。加词只改本文件，页面自动渲染；改完跑 _构建脚本/sync.py 同步到 xuanyunz.com/english/。记忆法=字母桩拆词 + 联结成画面链，桩表见 ../02-字母编码/字母编码表-A-Z.md",
+ "words": [
+  {
+   "word": "memory",
+   "date": "2026-11-16",
+   "scene": "今天给项目建主数据表、整理 AI 的记忆索引，磁盘上反复出现 MEMORY.md 这个文件——它就是这套系统记住事情的地方",
+   "ipa": "/ˈmem.ər.i/",
+   "zh_sound": "妹-么-瑞",
+   "core": "记忆；记忆力；计算机的内存",
+   "defs": [
+    {
+     "en": "Memory is the ability to keep information in your mind and bring it back later.",
+     "zh": "记忆是把信息留在脑子里、之后还能取回来的能力"
+    },
+    {
+     "en": "In computing, memory is the part of a machine that holds data while it is being used.",
+     "zh": "计算机里，memory 指运行中临时存放数据的那部分，也就是内存"
+    },
+    {
+     "en": "A memory of something is a thing you still remember about it.",
+     "zh": "a memory of something 指你对某件事保留下来的那段回忆"
+    }
+   ],
+   "sentences": [
+    {
+     "en": "My memory for names is terrible.",
+     "zh": "我记人名特别差。"
+    },
+    {
+     "en": "This file is the agent's memory — it holds every decision we already made.",
+     "zh": "这个文件就是智能体的记忆，它存着我们定过的每一个决定。"
+    }
+   ],
+   "trick": "memor 是「记」的词根：remember 再记一次，memorial 拿来纪念的东西，memory 是记下来那份东西本身。",
+   "split": "M + E + MO + RY",
+   "pegs": [
+    {
+     "x": "M",
+     "img": "麦当劳"
+    },
+    {
+     "x": "E",
+     "img": "鹅"
+    },
+    {
+     "x": "MO",
+     "img": "蘑菇"
+    },
+    {
+     "x": "RY",
+     "img": "熔岩"
+    }
+   ],
+   "chain": [
+    {
+     "text": "一颗透明的大脑泡在水里，表面贴着层层叠叠的小纸条。"
+    },
+    {
+     "x": "M",
+     "text": "麦当劳叔叔伸手去抠一张小纸条。"
+    },
+    {
+     "x": "E",
+     "text": "一只鹅扑上来啄他的手。"
+    },
+    {
+     "x": "MO",
+     "text": "他抄起一个大蘑菇当盾牌挡住。"
+    },
+    {
+     "x": "RY",
+     "text": "蘑菇被啄飞，掉进熔岩里烧成灰。"
+    },
+    {
+     "text": "灰烬里浮起一排新纸条，每张上面写着一件旧事。"
+    }
+   ],
+   "user_image": "小孩子记忆力的麦当劳是卖大鹅和蘑菇的，他们是用熔岩来做熟的。",
+   "image": "images/memory.webp"
+  },
+  {
+   "word": "ODS",
+   "date": "2026-11-16",
+   "scene": "搭企业数据底座时，数仓分层的四层里最底下那一层",
+   "ipa": "/ˌoʊ.diːˈes/",
+   "zh_sound": "欧-低-艾斯",
+   "core": "操作型数据存储，数仓的贴源层（原样存进来）",
+   "defs": [
+    {
+     "en": "Operational Data Store — the bottom layer that keeps raw data copied from source systems, unchanged.",
+     "zh": "操作型数据存储，原始数据原样落地的第一层"
+    },
+    {
+     "en": "In a warehouse project, ODS keeps every original field so any number can be traced back.",
+     "zh": "数仓里 ODS 保留原始字段，任何数字都能回溯"
+    }
+   ],
+   "sentences": [
+    {
+     "en": "Nothing gets cleaned in the ODS layer.",
+     "zh": "ODS 层不做任何清洗。"
+    },
+    {
+     "en": "The ODS layer held the same table we exported from the ERP.",
+     "zh": "ODS 层放的就是我们从 ERP 导出的那张表。"
+    }
+   ],
+   "trick": "O-D-S = Operation + Data + Store，三个词尾一字对一个词；Store 结尾说明这一层只存不改。",
+   "split": "O + D + S",
+   "pegs": [
+    {
+     "x": "O",
+     "img": "太阳"
+    },
+    {
+     "x": "D",
+     "img": "饺子"
+    },
+    {
+     "x": "S",
+     "img": "蛇"
+    }
+   ],
+   "chain": [
+    {
+     "text": "一条传送带把原始数据原封不动倒进仓库。"
+    },
+    {
+     "x": "O",
+     "text": "太阳停在传送带上方烤着。"
+    },
+    {
+     "x": "D",
+     "text": "一个滚烫的饺子从太阳里掉下来，砸上传送带。"
+    },
+    {
+     "x": "S",
+     "text": "一条蛇缠住饺子拖进仓库，门牌写着「未经清洗」。"
+    }
+   ]
+  },
+  {
+   "word": "DWD",
+   "date": "2026-11-16",
+   "scene": "同一套数仓分层里，ODS 上面那一层，负责清洗和去重",
+   "ipa": "/ˌdiː.dʌbəl.juːˈdiː/",
+   "zh_sound": "低-达不溜-低",
+   "core": "数据仓库明细层，清洗过的明细数据",
+   "defs": [
+    {
+     "en": "Data Warehouse Detail — the cleaned and de-duplicated detail layer built on top of the ODS.",
+     "zh": "数据仓库明细层，建在 ODS 之上，做过清洗和去重"
+    },
+    {
+     "en": "Each row in DWD is one business event, described properly.",
+     "zh": "DWD 每一行是一个业务事件，字段已经规范化"
+    }
+   ],
+   "sentences": [
+    {
+     "en": "Customer names get normalised in the DWD layer.",
+     "zh": "客户名的写法在 DWD 层统一。"
+    },
+    {
+     "en": "If DWD is missing, nobody can explain where a number came from.",
+     "zh": "少了 DWD，没人数得清一个数字是怎么来的。"
+    }
+   ],
+   "trick": "D-W-D = Data Warehouse Detail；Detail 说的是这里有每一条明细，不是汇总。",
+   "split": "D + W + D",
+   "pegs": [
+    {
+     "x": "D",
+     "img": "饺子"
+    },
+    {
+     "x": "W",
+     "img": "乌鸦"
+    },
+    {
+     "x": "D",
+     "img": "饺子"
+    }
+   ],
+   "chain": [
+    {
+     "text": "一条明细流水线，每条数据配一张小票。"
+    },
+    {
+     "x": "D",
+     "text": "传送带上滚来一个大饺子。"
+    },
+    {
+     "x": "W",
+     "text": "一只乌鸦俯冲下来啄住饺子。"
+    },
+    {
+     "x": "D",
+     "text": "乌鸦噎住，又吐出一个饺子砸在桌上。"
+    },
+    {
+     "text": "乌鸦把吐出来的饺子洗干净、挑掉沙子，小票一张张摆整齐。"
+    }
+   ]
+  },
+  {
+   "word": "DWS",
+   "date": "2026-11-16",
+   "scene": "数仓分层第三层，按主题做汇总的那一层",
+   "ipa": "/ˌdiː.dʌbəl.juːˈes/",
+   "zh_sound": "低-达不溜-艾斯",
+   "core": "数据仓库汇总层，按主题和天粒度做轻度聚合",
+   "defs": [
+    {
+     "en": "Data Warehouse Summary — the layer that aggregates detail data by subject, usually per day.",
+     "zh": "数据仓库汇总层，按主题聚合明细，通常按天"
+    },
+    {
+     "en": "DWS answers questions like how much each customer bought this week.",
+     "zh": "DWS 回答类似「本周每个客户买了多少」这种问题"
+    }
+   ],
+   "sentences": [
+    {
+     "en": "We build a daily summary at the DWS layer.",
+     "zh": "我们在 DWS 层做每日汇总。"
+    },
+    {
+     "en": "The dashboard reads from DWS, not from raw tables.",
+     "zh": "看板读的是 DWS，不是原始表。"
+    }
+   ],
+   "trick": "D-W-S = Data Warehouse Summary；Summary 是汇总，从整颗饺子嚼成一小坨就是明细到汇总。",
+   "split": "D + W + S",
+   "pegs": [
+    {
+     "x": "D",
+     "img": "饺子"
+    },
+    {
+     "x": "W",
+     "img": "乌鸦"
+    },
+    {
+     "x": "S",
+     "img": "蛇"
+    }
+   ],
+   "chain": [
+    {
+     "text": "一堆明细被揉成一个汇总球。"
+    },
+    {
+     "x": "D",
+     "text": "一个大饺子从流水线上滚下来。"
+    },
+    {
+     "x": "W",
+     "text": "乌鸦张嘴接住。"
+    },
+    {
+     "x": "S",
+     "text": "饺子从乌鸦嘴里滑进蛇嘴里。"
+    },
+    {
+     "text": "蛇把饺子反复嚼成一小坨，按主题分堆码好。"
+    }
+   ]
+  },
+  {
+   "word": "ADS",
+   "date": "2026-11-16",
+   "scene": "数仓分层最上面那一层，直接给看板和 AI 用的结果表",
+   "ipa": "/ˌeɪ.diːˈes/",
+   "zh_sound": "诶-低-艾斯",
+   "core": "应用数据服务层，面向应用的结果表",
+   "defs": [
+    {
+     "en": "Application Data Service — the top layer that serves finished results to dashboards and apps.",
+     "zh": "应用数据服务层，把结果直接交给看板和程序"
+    },
+    {
+     "en": "The ADS layer is what the business actually looks at.",
+     "zh": "业务真正看到的，就是 ADS 层"
+    }
+   ],
+   "sentences": [
+    {
+     "en": "Every chart on the dashboard is backed by an ADS table.",
+     "zh": "看板上每张图背后都是一张 ADS 表。"
+    },
+    {
+     "en": "Keep the ADS layer small and purpose-built.",
+     "zh": "ADS 层要小，只为具体用途而建。"
+    }
+   ],
+   "trick": "A-D-S = Application Data Service；Application 是「给应用用的」，Serve 原意是端盘子。",
+   "split": "AD + S",
+   "pegs": [
+    {
+     "x": "AD",
+     "img": "阿弟"
+    },
+    {
+     "x": "S",
+     "img": "蛇"
+    }
+   ],
+   "chain": [
+    {
+     "text": "一盘做好的数据端到应用门口。"
+    },
+    {
+     "x": "AD",
+     "text": "阿弟端着盘子跑过来。"
+    },
+    {
+     "x": "S",
+     "text": "他把盘子里的苹果和饺子全塞进蛇嘴里。"
+    },
+    {
+     "text": "蛇嚼完吐到各家各户门口的盘子里，谁要用谁自取。"
+    }
+   ]
+  },
+  {
+   "word": "DIM",
+   "date": "2026-11-16",
+   "scene": "数仓分层里另加的那一层，放客户、商品、门店、日期这些公共维度",
+   "ipa": "/dɪˈmen.ʃən/",
+   "zh_sound": "迪-门-婶",
+   "core": "维度表，描述「谁、什么、哪里、何时」的那张表",
+   "defs": [
+    {
+     "en": "Dimension — a table that describes facts: who, what, where and when.",
+     "zh": "维度表，用来描述事实：谁、什么、哪里、何时"
+    },
+    {
+     "en": "Customer, product and store are the three dimensions most warehouses start with.",
+     "zh": "客户、商品、门店，是大多数数仓最先建的三张维度表"
+    }
+   ],
+   "sentences": [
+    {
+     "en": "The date dimension lets you group anything by month.",
+     "zh": "有了日期维度，任何数据都能按月分组。"
+    },
+    {
+     "en": "A missing dimension key breaks the whole join.",
+     "zh": "维度主键一缺，整条关联就断了。"
+    }
+   ],
+   "trick": "DIM = Dimension 维度；维度表就是给事实数据贴标签的那几张表。",
+   "split": "DI + M",
+   "pegs": [
+    {
+     "x": "DI",
+     "img": "弟弟"
+    },
+    {
+     "x": "M",
+     "img": "麦当劳"
+    }
+   ],
+   "chain": [
+    {
+     "text": "一排空白名牌，等着写上谁、什么、哪里、什么时候。"
+    },
+    {
+     "x": "DI",
+     "text": "弟弟抱着一盒外卖饺子冲进来。"
+    },
+    {
+     "x": "M",
+     "text": "一头撞进麦当劳，把门口的名牌全撞倒。"
+    },
+    {
+     "text": "名牌一个个立起来，每张写上谁、什么、哪里、什么时候。"
+    }
+   ]
+  },
+  {
+   "word": "builder",
+   "date": "2026-11-16",
+   "scene": "拆解李彦宏百度世界2026 演讲时出现的「岗位收敛为 Builder 与 Seller 两类」",
+   "ipa": "/ˈbɪl.dər/",
+   "zh_sound": "比尔-德",
+   "core": "建造者 · 把东西造出来的人",
+   "defs": [
+    {
+     "en": "a person whose job is to build houses and other buildings",
+     "zh": "建筑工人、承包商"
+    },
+    {
+     "en": "a person or company that creates or develops something new",
+     "zh": "创建者、缔造者（a company builder 公司缔造者）"
+    },
+    {
+     "en": "a program that turns source code into a program that can run",
+     "zh": "构建器（编程：把源码组装成可运行程序）"
+    }
+   ],
+   "trick": "build 造 + -er 做事的人，builder 就是「建造的人」。",
+   "sentences": [
+    {
+     "en": "He is a company builder — he has started four businesses in ten years.",
+     "zh": "他是个创业者，十年里办过四家公司。"
+    },
+    {
+     "en": "The builder handed over the house two months late.",
+     "zh": "这个承包商晚交房两个月。"
+    }
+   ],
+   "split": "BU + IL + DE + R",
+   "pegs": [
+    {
+     "x": "BU",
+     "img": "布"
+    },
+    {
+     "x": "IL",
+     "img": "病"
+    },
+    {
+     "x": "DE",
+     "img": "德国人"
+    },
+    {
+     "x": "R",
+     "img": "小草"
+    }
+   ],
+   "chain": [
+    {
+     "text": "一栋还没封顶的房子。"
+    },
+    {
+     "x": "BU",
+     "text": "一块湿布从天而降盖在房梁上。"
+    },
+    {
+     "x": "IL",
+     "text": "布底下躺着一个病人。"
+    },
+    {
+     "x": "DE",
+     "text": "病人猛地一推，把德国人推倒。"
+    },
+    {
+     "x": "R",
+     "text": "德国人一头扎进草丛里。"
+    },
+    {
+     "text": "他从草堆爬起来，用那块布把房子搭完。"
+    }
+   ],
+   "user_image": "一个建筑工人将一块白布盖在了病了的德国人身上，然后这个人身体上长出了小草。",
+   "image": "images/builder.webp"
+  },
+  {
+   "word": "seller",
+   "date": "2026-11-16",
+   "scene": "同一场演讲里与 Builder 并列的另一类岗位：负责人与人之间的连接、建立信任",
+   "ipa": "/ˈsel.ər/",
+   "zh_sound": "塞-勒",
+   "core": "卖方 · 把东西交到别人手里的人",
+   "defs": [
+    {
+     "en": "a person who sells things, especially in a shop",
+     "zh": "卖东西的人、销售员"
+    },
+    {
+     "en": "a product that sells in very large numbers",
+     "zh": "畅销品（a best-seller 畅销书/爆款）"
+    },
+    {
+     "en": "the party that sells something in a contract of sale",
+     "zh": "卖方（合同法语境）"
+    }
+   ],
+   "trick": "sell 卖 + -er 做事的人；双写的 ll 用「两根锄头」表示同一个字母写了两遍。",
+   "sentences": [
+    {
+     "en": "This book has been a best-seller for three years.",
+     "zh": "这本书已经畅销三年了。"
+    },
+    {
+     "en": "The seller agreed to cover the shipping cost.",
+     "zh": "卖方同意承担运费。"
+    }
+   ],
+   "split": "SE + LL + ER",
+   "pegs": [
+    {
+     "x": "SE",
+     "img": "色"
+    },
+    {
+     "x": "LL",
+     "img": "两根锄头"
+    },
+    {
+     "x": "ER",
+     "img": "恶人"
+    }
+   ],
+   "chain": [
+    {
+     "text": "一个摆满货的摊位。"
+    },
+    {
+     "x": "SE",
+     "text": "摊位上泼开一大摊鲜红颜料。"
+    },
+    {
+     "x": "LL",
+     "text": "两把锄头从颜料里捅出来。"
+    },
+    {
+     "x": "ER",
+     "text": "一个恶人一把攥住两根锄头夺走。"
+    },
+    {
+     "text": "恶人扛着锄头回摊位，扯着嗓子叫卖。"
+    }
+   ],
+   "user_image": "卖东西的人，将一个彩色的锄头卖给了一个恶人",
+   "image": "images/seller.webp"
+  },
+  {
+   "word": "workspace",
+   "date": "2026-11-16",
+   "scene": "李彦宏演讲里的内部指标「已建设 4300 个 Workspace、沉淀 2 万个组织 Skill」",
+   "ipa": "/ˈwɜːrk.speɪs/",
+   "zh_sound": "吾尔克-斯佩斯",
+   "core": "工作空间 · 干活的那一块地方",
+   "defs": [
+    {
+     "en": "the area of an office where a particular person works",
+     "zh": "办公位、工作区域"
+    },
+    {
+     "en": "a virtual area on a computer where files for one project are kept",
+     "zh": "（软件里的）工作区，存某个项目文件的地方"
+    },
+    {
+     "en": "a shared online space where a team keeps its documents and tools",
+     "zh": "团队协作空间（文档、工具、Agent 都放里面）"
+    }
+   ],
+   "trick": "work 工作 + space 空间，两个现成的词拼起来，一眼拆成两半。",
+   "sentences": [
+    {
+     "en": "Everyone on the team shares the same workspace and the same files.",
+     "zh": "全团队共用同一个工作区和同一批文件。"
+    },
+    {
+     "en": "Clear your workspace before you start a new project.",
+     "zh": "开新项目之前先清空你的工作区。"
+    }
+   ],
+   "split": "W + OR + K + SP + A + CE",
+   "pegs": [
+    {
+     "x": "W",
+     "img": "乌鸦",
+     "part": "work"
+    },
+    {
+     "x": "OR",
+     "img": "猿人",
+     "part": "work"
+    },
+    {
+     "x": "K",
+     "img": "跷跷板",
+     "part": "work"
+    },
+    {
+     "x": "SP",
+     "img": "手帕",
+     "part": "space"
+    },
+    {
+     "x": "A",
+     "img": "苹果",
+     "part": "space"
+    },
+    {
+     "x": "CE",
+     "img": "厕所",
+     "part": "space"
+    }
+   ],
+   "chain": [
+    {
+     "text": "一间空屋，桌椅还没摆开。"
+    },
+    {
+     "x": "W",
+     "text": "乌鸦骑上猿人的肩膀。"
+    },
+    {
+     "x": "OR",
+     "text": "猿人被乌鸦压着，一屁股坐上跷跷板。"
+    },
+    {
+     "x": "K",
+     "text": "跷跷板把猿人弹飞到天上。"
+    },
+    {
+     "x": "SP",
+     "text": "天上掉下一块手帕。"
+    },
+    {
+     "x": "A",
+     "text": "手帕里裹着一个苹果。"
+    },
+    {
+     "x": "CE",
+     "text": "苹果连着手帕砸进厕所。"
+    },
+    {
+     "text": "猿人落地，钻进那间空屋，把桌椅摆开干活。"
+    }
+   ],
+   "user_image": "在办公室里，乌鸦和猿人在玩跷跷板，猿人拿了手帕擦了擦苹果吃完后闹肚子去厕所了",
+   "image": "images/workspace.webp"
+  },
+  {
+   "word": "loop",
+   "date": "2026-11-16",
+   "scene": "拆李彦宏百度世界2026 演讲「可衡量 + Looping = 持续进化」时问的两个词",
+   "ipa": "/luːp/",
+   "zh_sound": "路普",
+   "core": "圈 · 回到起点的那一圈",
+   "defs": [
+    {
+     "en": "a shape or path that curves round until it meets itself again",
+     "zh": "环、圈（绳子绕成的圈）"
+    },
+    {
+     "en": "a set of instructions that repeats until a condition is met",
+     "zh": "循环（编程：for / while）"
+    },
+    {
+     "en": "a repeated process in which each round feeds the next",
+     "zh": "闭环：一次「做→量→改」"
+    }
+   ],
+   "trick": "loop 只有一个音节；拼写上两个 o 首尾相连，本来就是「圈」的形状。",
+   "sentences": [
+    {
+     "en": "The script runs in a loop until you press stop.",
+     "zh": "这个脚本会一直循环运行，直到你按下停止。"
+    },
+    {
+     "en": "We are stuck in a loop: same problem, same fix, every week.",
+     "zh": "我们陷在死循环里：同样的问题，同样的修法，每周一遍。"
+    }
+   ],
+   "split": "L + OO + P",
+   "pegs": [
+    {
+     "x": "L",
+     "img": "锄头"
+    },
+    {
+     "x": "OO",
+     "img": "眼镜"
+    },
+    {
+     "x": "P",
+     "img": "斧头"
+    }
+   ],
+   "chain": [
+    {
+     "text": "一个首尾相接的圈。"
+    },
+    {
+     "x": "L",
+     "text": "锄头插进圈里。"
+    },
+    {
+     "x": "OO",
+     "text": "眼镜挂在锄头柄上。"
+    },
+    {
+     "x": "P",
+     "text": "斧头劈下来，把眼镜劈成两半。"
+    },
+    {
+     "text": "斧头劈出的口子在地上连成一整圈，首尾接上。"
+    }
+   ]
+  },
+  {
+   "word": "looping",
+   "date": "2026-11-16",
+   "scene": "拆李彦宏百度世界2026 演讲「可衡量 + Looping = 持续进化」时问的两个词",
+   "ipa": "/ˈluː.pɪŋ/",
+   "zh_sound": "路-平",
+   "core": "循环迭代 · 一圈接一圈地转",
+   "defs": [
+    {
+     "en": "the act of repeating a process, with each round building on the last",
+     "zh": "循环迭代（演讲中的用法）"
+    },
+    {
+     "en": "the act of running the same set of instructions again and again",
+     "zh": "循环执行（编程语境）"
+    },
+    {
+     "en": "a video technique in which a short clip repeats without a visible seam",
+     "zh": "无缝循环播放（视频/动画）"
+    }
+   ],
+   "trick": "loop + -ing；-ing 表示「正在进行的」，loop 是圈，looping 就是正绕着圈转。",
+   "sentences": [
+    {
+     "en": "Content looping is how small teams grow fast.",
+     "zh": "内容循环迭代，是小团队长大的办法。"
+    },
+    {
+     "en": "The animation uses seamless looping, so you never see a cut.",
+     "zh": "这个动画用了无缝循环，你看不出接缝在哪。"
+    }
+   ],
+   "split": "L + OO + P + ING",
+   "pegs": [
+    {
+     "x": "L",
+     "img": "锄头"
+    },
+    {
+     "x": "OO",
+     "img": "眼镜"
+    },
+    {
+     "x": "P",
+     "img": "斧头"
+    },
+    {
+     "x": "ING",
+     "img": "鹰"
+    }
+   ],
+   "chain": [
+    {
+     "text": "一个转个不停的圈。"
+    },
+    {
+     "x": "L",
+     "text": "锄头插进圈里。"
+    },
+    {
+     "x": "OO",
+     "text": "眼镜挂在锄头柄上。"
+    },
+    {
+     "x": "P",
+     "text": "斧头劈下，把眼镜劈开。"
+    },
+    {
+     "x": "ING",
+     "text": "一只鹰从缺口里扑出来。"
+    },
+    {
+     "text": "鹰绕着那个圈，一圈接一圈地飞。"
+    }
+   ]
+  },
+  {
+   "word": "harness",
+   "date": "2026-11-16",
+   "scene": "聊 MEMORY.md 行数上限时我说「harness 内建的行数告警」，你问这个词",
+   "ipa": "/ˈhɑːr.nɪs/",
+   "zh_sound": "哈-尼斯",
+   "core": "挽具 · 把一股力气套起来干活的那套装置",
+   "defs": [
+    {
+     "en": "a set of straps used to control a horse or other animal",
+     "zh": "马具、挽具（套在马身上拉车的那套皮带）"
+    },
+    {
+     "en": "to control and use something, especially to get an advantage from it",
+     "zh": "驾驭、利用（harness the power of AI 把 AI 的能力用起来）"
+    },
+    {
+     "en": "the framework that runs, feeds and measures a model or system",
+     "zh": "运行框架、测试脚手架（软件：把模型、输入、评分串起来的那层外壳）"
+    }
+   ],
+   "sentences": [
+    {
+     "en": "They harnessed the power of AI to cut out the boring work.",
+     "zh": "他们借用 AI 的能力，把那堆枯燥的活砍掉了。"
+    },
+    {
+     "en": "The test harness runs every case and reports which ones failed.",
+     "zh": "测试框架跑完全部用例，报出哪些失败了。"
+    }
+   ],
+   "trick": "harness 原意是马身上的挽具；给马上套就是管住它，后来引申成「驾驭、利用」一整套东西。",
+   "split": "HA + R + NE + SS",
+   "pegs": [
+    {
+     "x": "HA",
+     "img": "哈"
+    },
+    {
+     "x": "R",
+     "img": "小草"
+    },
+    {
+     "x": "NE",
+     "img": "哪吒"
+    },
+    {
+     "x": "SS",
+     "img": "两条蛇"
+    }
+   ],
+   "chain": [
+    {
+     "text": "墙上挂着一副马挽具，皮带和铁扣叮当响。"
+    },
+    {
+     "x": "HA",
+     "text": "挽具里冒出一声哈哈笑。"
+    },
+    {
+     "x": "R",
+     "text": "笑声把墙角一丛小草吹得东倒西歪。"
+    },
+    {
+     "x": "NE",
+     "text": "哪吒从草里蹦出来。"
+    },
+    {
+     "x": "SS",
+     "text": "哪吒一脚踢飞两条蛇。"
+    },
+    {
+     "text": "他把两条蛇捡起来套进挽具，骑着当马走。"
+    }
+   ],
+   "user_image": "一个马具长了一张嘴在哈哈笑，一边笑一边吐出了小草，出现一个哪吒用法术将小草变成了两条蛇。",
+   "image": "images/harness.webp"
+  }
+ ]
+}
