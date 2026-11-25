@@ -10,8 +10,8 @@ import io, os, shutil, subprocess, sys, tempfile
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
 SRC = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-KEY = r'C:/Users/ROG/.ssh/id_ed25519_caa_oa'
-HOST = 'root@121.41.116.103'
+KEY = os.environ.get('SSH_KEY', os.path.expanduser('~/.ssh/id_ed25519'))
+HOST = os.environ.get('DEPLOY_HOST', 'root@your-server')
 DST = '/var/www/xuanyunz.com/english/'
 FILES = ['index.html', 'words.json']
 
